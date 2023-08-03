@@ -1,9 +1,17 @@
 * {
-  padding: 0;
-  margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
   transition: all 0.8s ease;
+}
+
+.title-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  font-style: italic;
+  color: rgb(205, 60, 140);
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
 }
 
 body {
@@ -23,21 +31,25 @@ body {
   position: relative;
   height: auto;
   width: auto;
-  padding: 20px;
+  padding: 40px;
   border-radius: 10px;
-  box-shadow: 0 0 30px rgb(187, 130, 130);
-  background-color: #fff;
+  box-shadow: 0 0 30px rgb(118, 78, 78);
+  background-color: #f5dcf9;
   /* dark theme */
 }
 .calculator #display {
-  color: #0a1e23;
+  color: #696969;
+  background-color: #ffd5d8;
+  border-radius: 20px;
+  box-shadow: -1px 4px 1px 1px rgb(200, 127, 127);
   margin: 0 10px;
-  height: 120px;
+  height: 80px;
   width: auto;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   font-size: 30px;
+  font-family: cursive;
   margin-bottom: 20px;
   font-weight: 800;
 }
@@ -46,42 +58,52 @@ body {
 }
 .calculator #clear {
   background-color: #ffd5d8;
-  color: #fc4552;
+  color: #f967f3;
 }
 .calculator .btn-number {
   background-color: #c3eaff;
-  color: #000000;
+  color: #232323;
+  font-weight: 700;
+  box-shadow: 0 0 8px rgb(179, 131, 199);
 }
 .calculator .btn-operator {
   background-color: #ffd0fb;
   color: #f967f3;
+  font-weight: 800;
+  box-shadow: 0 0 8px rgb(179, 131, 199);
 }
 .calculator .btn-equal {
   background-color: #adf9e7;
   color: #000;
+  font-weight: 800;
+  box-shadow: 0 0 8px rgb(179, 131, 199);
 }
 .calculator.dark {
   background-color: #1B1B1B;
 }
 .calculator.dark #display {
-  color: #f8fafb;
+  background-color: #c6c6c6;
+  color: #232323;
+  box-shadow: -1px 4px 1px 1px rgb(255, 255, 255);
 }
 .calculator.dark #clear {
-  background-color: #4C35AA;
+  background-color: #ff6090;
   color: white;
 }
 .calculator.dark .btn-number {
-  background-color: #8EFDA6;
-  color: black;
+  background-color: #55e3ff;
+  color: #232323;
   font-weight: 600;
 }
 .calculator.dark .btn-operator {
-  background-color: #F0DB4F;
-  color: #aa00a4;
+  background-color: #f81eb3;
+  color: #ffffff;
+  font-weight: 700;
 }
 .calculator.dark .btn-equal {
-  background-color: #F23B00;
+  background-color: #5bfcde;
   color: #ffffff;
+  font-weight: 700;
 }
 
 .theme-toggler {
@@ -108,7 +130,7 @@ body {
   color: #333;
 }
 .theme-toggler.active::before {
-  background-color: #971414;
+  background-color: #8a3dfe;
 }
 
 button {
